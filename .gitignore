@@ -80,3 +80,4 @@ agenthub/agents/youtube/db
 android-sdk/ 
 
 .env
+backend/.env
