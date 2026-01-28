@@ -84,8 +84,10 @@ async def root():
 
 @api_router.get("/health")
 async def health_check():
-    await app.state.db.command("ping")
-    return {"status": "healthy"}
+    return {
+        "status": "ok",
+        "service": "primo-barber-api"
+    }
 
 # --------------------------------------------------
 # Routers
